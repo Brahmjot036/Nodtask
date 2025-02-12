@@ -1,86 +1,50 @@
-TaskFlow - Interactive Task Management with React Flow & FastAPI
-
-TaskFlow is a dynamic task management application that allows users to create, update, delete, and visualize tasks using an interactive node-based UI. It leverages React Flow for the frontend and FastAPI for the backend, with seamless data persistence.
+Nodtask - Interactive Task Management with React Flow & FastAPI
+Nodtask is a modern task management application that visualizes tasks as an interactive flowchart. Built using React Flow for the frontend and FastAPI for the backend, it allows users to create, manage, and connect tasks dynamically, making project organization intuitive and visually appealing.
 
 Features
-
-Add, Update, and Delete Tasks dynamically
-
-Interactive Node-Based UI for task visualization
-
-Persistent Data Storage using a FastAPI backend
-
-REST API Integration for seamless frontend-backend communication
-
-Styled UI with Gradient Effects and Shadows
+✅ Interactive Task Flow – Manage tasks with a graph-based approach
+✅ CRUD Operations – Add, edit, and delete tasks via API
+✅ React Flow Integration – Provides a seamless UI experience
+✅ FastAPI Backend – Handles task management efficiently
+✅ Task Connections – Create relationships between different tasks
+✅ Live Notifications – Instant feedback for user actions
 
 Tech Stack
+Frontend: React.js, React Flow, Vite
+Backend: FastAPI, Uvicorn
+Database: SQLite (or PostgreSQL, MySQL based on preference)
+Styling: Glassmorphism UI with CSS
 
-Frontend:
+Setup Instructions
+1. Clone the Repository
 
-React.js
+git clone https://github.com/your-username/nodtask.git
+cd nodtask
+Frontend Setup (React Flow)
+2. Install Frontend Dependencies
 
-React Flow
+cd react-flow-app
+npm install
+3. Run the Frontend
 
-JavaScript (ES6+)
+npm run dev
+🚀 The frontend will be available at http://localhost:5173/
 
-CSS for UI Styling
+Backend Setup (FastAPI)
 
-Backend:
+DEPENDENCIES
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+sqlite
 
-FastAPI
-
-
-Database:
-
-SQLite
-
-Installation & Setup
-
-Backend (FastAPI)
-
-Clone the repository:
-
-git clone https://github.com/your-username/taskflow.git
-cd taskflow/backend
-
-
-Install dependencies:
-
-pip install fastapi uvicorn pydantic
-
-Run the FastAPI server:
-
+6. Run the FastAPI Server
 uvicorn main:app --reload
 
-The API will be accessible at: http://127.0.0.1:8000
+uvicorn main:app --reload
+🚀 The backend will run at http://127.0.0.1:8000/
 
-Frontend (React.js + React Flow)
-
-Navigate to the frontend folder:
-
-cd ../frontend
-
-Install dependencies:
-
-npm install
-
-Run the React app:
-
-npm start
-
-The frontend will be available at: http://localhost:5173
-
-API Endpoints
-
-Get all tasks
-
-Endpoint: GET /tasks
-
-Response:
-
-[
-  { "id": 1, "name": "Task 1" },
-  { "id": 2, "name": "Task 2" }
-]
+7. Test API in Swagger
+Visit: http://127.0.0.1:8000/docs
 
