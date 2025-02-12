@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; /* Centering everything */
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(20, 20, 50, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.logo {
+  position: absolute;
+  left: 30px; /* Keeps logo on the left */
+  color: #00d4ff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  gap: 20px; /* Adjust spacing */
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+
+.links a:hover {
+  color: #00d4ff;
+}

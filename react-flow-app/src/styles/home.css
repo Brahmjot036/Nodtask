@@ -1,0 +1,36 @@
+html, body {
+  overflow-x: hidden; /* Ensures no horizontal scrolling on the entire page */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw; /* Ensures it covers the full screen width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #121212, #1a1a3d);
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Prevents unwanted scrolling */
+  margin: 0; /* Removes any default margins */
+  padding: 0; /* Ensures no extra spacing */
+  box-sizing: border-box; /* Ensures width calculations include padding */
+}
+
+.get-started-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00d4ff;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.get-started-btn:hover {
+  background: #0088cc;
+}
